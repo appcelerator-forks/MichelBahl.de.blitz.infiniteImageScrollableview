@@ -16,7 +16,7 @@ The Scrollableview loads the next/previews image after swipe gesture ends.
 
 * Add the widget to your *Scrollableview:
 
-	```xml
+```xml
 <Alloy>
 	<Window class="container">
 		<ScrollableView id="pics">
@@ -24,35 +24,34 @@ The Scrollableview loads the next/previews image after swipe gesture ends.
 		</ScrollableView>
 	</Window>
 </Alloy>
-	```
+```
 
-* Init the Widget
+##Init the Widget
 
-	```javascript
+```javascript
 $.ifScollableview.init({
-		parent			  : $.pics,
-	    index 			: 4,
-		  imageData 	: images,
+                parent      : $.pics,
+	        index       : 4,
+	        imageData   : images,
+	        imageStyle  : $.createStyle({});
 });
+```
 
-	```
 
-
-## Styling
+## Styling 
 
 If you need to  style the image while runtime pass a style parameter -> "imageStyle"
 
-	```javascript
+```javascript
 $.ifScollableview.init({
-		parent			  : $.pics,
-	    index 			: 4,
-		  imageData 	: images,
-		  imageStyle  : $.createStyle({});
+                parent      : $.pics,
+	        index       : 4,
+	        imageData   : images,
+	        imageStyle  : $.createStyle({});
 });
-
-	```
+```
 
 
 
 ## Testing
-There is a test app and instructions in the 
+There is a test app in [example](https://github.com/MichelBahl/de.blitz.infiniteImageScrollableview/tree/example) branch.
