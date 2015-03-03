@@ -10,6 +10,7 @@ The Scrollableview loads the next/previews image after swipe gesture ends.
 ## Features
 * Lazy loading
 * Limited number of views hold in scrollableview
+* No flickering, blinking or flashing either on iOS nor on android 
 
 
 ### How to
@@ -30,10 +31,10 @@ The Scrollableview loads the next/previews image after swipe gesture ends.
 
 ```javascript
 $.ifScollableview.init({
-                parent      : $.pics,
-	        index       : 4,
-	        imageData   : images,
-	        imageStyle  : $.createStyle({});
+            parent      : $.pics,
+            index       : 4,
+            imageData   : images,
+            imageStyle  : $.createStyle({});
 });
 ```
 
@@ -44,10 +45,10 @@ If you need to  style the image while runtime pass a style parameter -> "imageSt
 
 ```javascript
 $.ifScollableview.init({
-                parent      : $.pics,
-	        index       : 4,
-	        imageData   : images,
-	        imageStyle  : $.createStyle({});
+            parent      : $.pics,
+            index       : 4,
+            imageData   : images,
+            imageStyle  : $.createStyle({});
 });
 ```
 
